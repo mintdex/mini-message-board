@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+  h1 New message
+  form(action="/new" method="POST")
+    div 
+      input(type="text" placeholder="Name" name="messageUser" id="messageUser" required)
+    div
+      input(type="text" placeholder="Message" name="messageText" id="messageText") 
+    div
+    button(type="submit") Submit
